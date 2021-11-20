@@ -1,0 +1,11 @@
+codefromstrings = false
+runreport = true
+deletestats = false
+modules = {
+    ['net.tls'] = 'tls.lua',
+    ['net.tls.config'] = 'lib/config.lua',
+    ['net.tls.unix'] = 'lib/unix.lua',
+    ['net.tls.stream'] = 'lib/stream.lua',
+    ['net.tls.stream.inet'] = 'lib/stream/inet.lua',
+    ['net.tls.stream.unix'] = 'lib/stream/unix.lua',
+}
