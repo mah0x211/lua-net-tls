@@ -7,7 +7,6 @@ tls submodule of [lua-net](https://github.com/mah0x211/lua-net).
 
 **NOTE: this module is under heavy development.**
 
-
 ***
 
 ## Dependencies
@@ -16,3 +15,19 @@ tls submodule of [lua-net](https://github.com/mah0x211/lua-net).
 - net: https://github.com/mah0x211/lua-net
 - libtls: https://github.com/mah0x211/lua-libtls
 
+
+## Installation
+
+```
+$ luarocks install net-tls
+```
+
+
+## Usage
+
+please see the [example files](example/).
+
+
+## API Reference
+
+please see [doc/README.md](doc/README.md).
