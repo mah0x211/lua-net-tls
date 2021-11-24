@@ -90,12 +90,12 @@ Socket = require('metamodule').new.Socket(Socket, 'net.stream.Socket',
 --- @class net.tls.stream.Server : net.stream.Server, net.tls.stream.Socket
 local Server = {}
 
---- createConnection
+--- new_connection
 --- @param sock llsocket.socket
 --- @param nonblock boolean
 --- @return net.tls.Socket sock
 --- @return string? err
-function Server:createConnection(sock, nonblock)
+function Server:new_connection(sock, nonblock)
     local tls, err = self.tls:accept_socket(sock:fd())
 
     if err then

@@ -14,7 +14,7 @@ dependencies = {
     'ioex >= 0.2.0',
     'isa >= 0.1.0',
     'metamodule ~> 0.2',
-    'net >= 0.27.0',
+    'net >= 0.28.0',
     'libtls >= 3.4.1',
 }
 build = {
