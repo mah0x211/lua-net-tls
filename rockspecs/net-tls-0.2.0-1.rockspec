@@ -1,7 +1,8 @@
 package = 'net-tls'
-version = 'scm-1'
+version = '0.2.0-1'
 source = {
-    url = 'git+https://github.com/mah0x211/lua-net-tls.git'
+    url = 'git+https://github.com/mah0x211/lua-net-tls.git',
+    tag = 'v0.2.0',
 }
 description = {
     summary = 'net-tls module',
