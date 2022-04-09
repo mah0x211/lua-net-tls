@@ -22,8 +22,8 @@
 -- assign to local
 local floor = math.floor
 local io = require('ioex')
-local tofile = io.file
 local isfile = io.isfile
+local tofile = require('io.tofile')
 local poll = require('net.poll')
 local unwait = poll.unwait
 -- constants
