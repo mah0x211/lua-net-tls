@@ -1,6 +1,5 @@
 require('luacov')
 require('nosigpipe')
-local assert = require('assertex')
 local testcase = require('testcase')
 local config = require('net.tls.config')
 local net = require('net')

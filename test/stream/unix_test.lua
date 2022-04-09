@@ -1,7 +1,5 @@
 require('luacov')
 require('nosigpipe')
-local io = require('ioex')
-local assert = require('assertex')
 local testcase = require('testcase')
 local net = require('net')
 local config = require('net.tls.config')
