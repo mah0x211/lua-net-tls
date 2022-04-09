@@ -11,7 +11,7 @@ description = {
 }
 dependencies = {
     'lua >= 5.1',
-    'ioex >= 0.2.0',
+    'io-isfile >= 0.1.0',
     'io-tofile >= 0.1.0',
     'isa >= 0.1.0',
     'metamodule >= 0.2',
