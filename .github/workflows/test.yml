@@ -32,7 +32,8 @@ jobs:
           - "5.2"
           - "5.3"
           - "5.4"
-
+          - "luajit-2.0.5"
+          - "luajit-openresty"
     steps:
     -
       name: Checkout
@@ -56,7 +57,7 @@ jobs:
         luaVersion: ${{ matrix.lua-version }}
     -
       name: Setup Luarocks
-      uses: leafo/gh-actions-luarocks@v4.0.0
+      uses: leafo/gh-actions-luarocks@v4
     -
       name: Install
       run: |
@@ -65,16 +66,14 @@ jobs:
       name: Install Tools
       run: |
         luarocks install testcase
-        luarocks install ioex
         luarocks install luacov-coveralls
     -
       name: Run Test
       run: |
         testcase --coverage ./test/
     -
-      name: Coveralls
-      continue-on-error: true
-      env:
-        COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        luacov-coveralls
+      name: Upload lua coverage to Codecov
+      uses: codecov/codecov-action@v2
+      with:
+        files: ./luacov.report.out
+        flags: unittests
