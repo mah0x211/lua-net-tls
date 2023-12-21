@@ -5,7 +5,7 @@
 
 tls submodule of [lua-net](https://github.com/mah0x211/lua-net).
 
-**NOTE: this module is under heavy development.**
+**NOTE: This module has been integrated into the net module.**
 
 ***
 
